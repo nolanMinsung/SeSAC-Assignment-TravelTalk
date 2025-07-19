@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		4E462DDF2E2BFA86004C0215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E462DC02E2BFA84004C0215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E462DC72E2BFA84004C0215;
+			remoteInfo = "Assignment-TravelTalk";
+		};
+		4E462DE92E2BFA86004C0215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E462DC02E2BFA84004C0215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E462DC72E2BFA84004C0215;
+			remoteInfo = "Assignment-TravelTalk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E462DC82E2BFA84004C0215 /* Assignment-TravelTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment-TravelTalk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E462DDE2E2BFA86004C0215 /* Assignment-TravelTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment-TravelTalkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E462DE82E2BFA86004C0215 /* Assignment-TravelTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment-TravelTalkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4E462DF02E2BFA86004C0215 /* Exceptions for "Assignment-TravelTalk" folder in "Assignment-TravelTalk" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4E462DC72E2BFA84004C0215 /* Assignment-TravelTalk */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4E462DCA2E2BFA84004C0215 /* Assignment-TravelTalk */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4E462DF02E2BFA86004C0215 /* Exceptions for "Assignment-TravelTalk" folder in "Assignment-TravelTalk" target */,
+			);
+			path = "Assignment-TravelTalk";
+			sourceTree = "<group>";
+		};
+		4E462DE12E2BFA86004C0215 /* Assignment-TravelTalkTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Assignment-TravelTalkTests";
+			sourceTree = "<group>";
+		};
+		4E462DEB2E2BFA86004C0215 /* Assignment-TravelTalkUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Assignment-TravelTalkUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E462DC52E2BFA84004C0215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E462DDB2E2BFA86004C0215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E462DE52E2BFA86004C0215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E462DBF2E2BFA84004C0215 = {
+			isa = PBXGroup;
+			children = (
+				4E462DCA2E2BFA84004C0215 /* Assignment-TravelTalk */,
+				4E462DE12E2BFA86004C0215 /* Assignment-TravelTalkTests */,
+				4E462DEB2E2BFA86004C0215 /* Assignment-TravelTalkUITests */,
+				4E462DC92E2BFA84004C0215 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E462DC92E2BFA84004C0215 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E462DC82E2BFA84004C0215 /* Assignment-TravelTalk.app */,
+				4E462DDE2E2BFA86004C0215 /* Assignment-TravelTalkTests.xctest */,
+				4E462DE82E2BFA86004C0215 /* Assignment-TravelTalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E462DC72E2BFA84004C0215 /* Assignment-TravelTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E462DF12E2BFA86004C0215 /* Build configuration list for PBXNativeTarget "Assignment-TravelTalk" */;
+			buildPhases = (
+				4E462DC42E2BFA84004C0215 /* Sources */,
+				4E462DC52E2BFA84004C0215 /* Frameworks */,
+				4E462DC62E2BFA84004C0215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4E462DCA2E2BFA84004C0215 /* Assignment-TravelTalk */,
+			);
+			name = "Assignment-TravelTalk";
+			packageProductDependencies = (
+			);
+			productName = "Assignment-TravelTalk";
+			productReference = 4E462DC82E2BFA84004C0215 /* Assignment-TravelTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E462DDD2E2BFA86004C0215 /* Assignment-TravelTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E462DF62E2BFA86004C0215 /* Build configuration list for PBXNativeTarget "Assignment-TravelTalkTests" */;
+			buildPhases = (
+				4E462DDA2E2BFA86004C0215 /* Sources */,
+				4E462DDB2E2BFA86004C0215 /* Frameworks */,
+				4E462DDC2E2BFA86004C0215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E462DE02E2BFA86004C0215 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4E462DE12E2BFA86004C0215 /* Assignment-TravelTalkTests */,
+			);
+			name = "Assignment-TravelTalkTests";
+			packageProductDependencies = (
+			);
+			productName = "Assignment-TravelTalkTests";
+			productReference = 4E462DDE2E2BFA86004C0215 /* Assignment-TravelTalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E462DE72E2BFA86004C0215 /* Assignment-TravelTalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E462DF92E2BFA86004C0215 /* Build configuration list for PBXNativeTarget "Assignment-TravelTalkUITests" */;
+			buildPhases = (
+				4E462DE42E2BFA86004C0215 /* Sources */,
+				4E462DE52E2BFA86004C0215 /* Frameworks */,
+				4E462DE62E2BFA86004C0215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E462DEA2E2BFA86004C0215 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4E462DEB2E2BFA86004C0215 /* Assignment-TravelTalkUITests */,
+			);
+			name = "Assignment-TravelTalkUITests";
+			packageProductDependencies = (
+			);
+			productName = "Assignment-TravelTalkUITests";
+			productReference = 4E462DE82E2BFA86004C0215 /* Assignment-TravelTalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E462DC02E2BFA84004C0215 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					4E462DC72E2BFA84004C0215 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					4E462DDD2E2BFA86004C0215 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 4E462DC72E2BFA84004C0215;
+					};
+					4E462DE72E2BFA86004C0215 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 4E462DC72E2BFA84004C0215;
+					};
+				};
+			};
+			buildConfigurationList = 4E462DC32E2BFA84004C0215 /* Build configuration list for PBXProject "Assignment-TravelTalk" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E462DBF2E2BFA84004C0215;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4E462DC92E2BFA84004C0215 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E462DC72E2BFA84004C0215 /* Assignment-TravelTalk */,
+				4E462DDD2E2BFA86004C0215 /* Assignment-TravelTalkTests */,
+				4E462DE72E2BFA86004C0215 /* Assignment-TravelTalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E462DC62E2BFA84004C0215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E462DDC2E2BFA86004C0215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E462DE62E2BFA86004C0215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E462DC42E2BFA84004C0215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E462DDA2E2BFA86004C0215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E462DE42E2BFA86004C0215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E462DE02E2BFA86004C0215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E462DC72E2BFA84004C0215 /* Assignment-TravelTalk */;
+			targetProxy = 4E462DDF2E2BFA86004C0215 /* PBXContainerItemProxy */;
+		};
+		4E462DEA2E2BFA86004C0215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E462DC72E2BFA84004C0215 /* Assignment-TravelTalk */;
+			targetProxy = 4E462DE92E2BFA86004C0215 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4E462DF22E2BFA86004C0215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548W892M42;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Assignment-TravelTalk/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.minsung.Assignment-TravelTalk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E462DF32E2BFA86004C0215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548W892M42;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Assignment-TravelTalk/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.minsung.Assignment-TravelTalk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E462DF42E2BFA86004C0215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 548W892M42;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E462DF52E2BFA86004C0215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 548W892M42;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E462DF72E2BFA86004C0215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548W892M42;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.minsung.Assignment-TravelTalkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment-TravelTalk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Assignment-TravelTalk";
+			};
+			name = Debug;
+		};
+		4E462DF82E2BFA86004C0215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548W892M42;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.minsung.Assignment-TravelTalkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment-TravelTalk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Assignment-TravelTalk";
+			};
+			name = Release;
+		};
+		4E462DFA2E2BFA86004C0215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548W892M42;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.minsung.Assignment-TravelTalkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Assignment-TravelTalk";
+			};
+			name = Debug;
+		};
+		4E462DFB2E2BFA86004C0215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548W892M42;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.minsung.Assignment-TravelTalkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Assignment-TravelTalk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E462DC32E2BFA84004C0215 /* Build configuration list for PBXProject "Assignment-TravelTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E462DF42E2BFA86004C0215 /* Debug */,
+				4E462DF52E2BFA86004C0215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E462DF12E2BFA86004C0215 /* Build configuration list for PBXNativeTarget "Assignment-TravelTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E462DF22E2BFA86004C0215 /* Debug */,
+				4E462DF32E2BFA86004C0215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E462DF62E2BFA86004C0215 /* Build configuration list for PBXNativeTarget "Assignment-TravelTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E462DF72E2BFA86004C0215 /* Debug */,
+				4E462DF82E2BFA86004C0215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E462DF92E2BFA86004C0215 /* Build configuration list for PBXNativeTarget "Assignment-TravelTalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E462DFA2E2BFA86004C0215 /* Debug */,
+				4E462DFB2E2BFA86004C0215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E462DC02E2BFA84004C0215 /* Project object */;
+}
