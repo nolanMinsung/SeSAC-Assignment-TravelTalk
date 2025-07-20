@@ -1,5 +1,5 @@
 //
-//  FriendListViewController.swift
+//  ChatRoomListViewController.swift
 //  Assignment-TravelTalk
 //
 //  Created by 김민성 on 7/20/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FriendListViewController: UIViewController {
+class ChatRoomListViewController: UIViewController {
     
     private(set) var allChatRoomList = ChatList.list
     private(set) lazy var filteredChatRoomList: [ChatRoom] = allChatRoomList
@@ -28,7 +28,7 @@ class FriendListViewController: UIViewController {
 
 // Initial Settings
 
-extension FriendListViewController {
+extension ChatRoomListViewController {
     
     private func setupCollectionView() {
         // cell registrering
@@ -55,7 +55,7 @@ extension FriendListViewController {
 
 // MARK: - UICollectionViewDataSource
 
-extension FriendListViewController: UICollectionViewDataSource {
+extension ChatRoomListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         filteredChatRoomList.count
@@ -76,14 +76,14 @@ extension FriendListViewController: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegate
 
-extension FriendListViewController: UICollectionViewDelegate {
+extension ChatRoomListViewController: UICollectionViewDelegate {
     
 }
 
 
 // MARK: - UISearchBarDelegate
 
-extension FriendListViewController: UISearchBarDelegate {
+extension ChatRoomListViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         view.endEditing(true)

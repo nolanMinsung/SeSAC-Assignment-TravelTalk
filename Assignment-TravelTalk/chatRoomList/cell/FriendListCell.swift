@@ -10,11 +10,8 @@ import UIKit
 class FriendListCell: UICollectionViewCell {
     
     @IBOutlet var imageView: UIImageView!
-    
     @IBOutlet var chatRoomNameLabel: UILabel!
-    
     @IBOutlet var latestChatLabel: UILabel!
-    
     @IBOutlet var latestChatDateLabel: UILabel!
     
     override func awakeFromNib() {
