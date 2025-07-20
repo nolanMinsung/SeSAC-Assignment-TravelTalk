@@ -9,9 +9,10 @@ import UIKit
 
 class FriendListViewController: UIViewController {
     
-    private(set) var chatRoomList = ChatList.list + ChatList.list
+    private(set) var allChatRoomList = ChatList.list
+    private(set) lazy var filteredChatRoomList: [ChatRoom] = allChatRoomList
     
-    @IBOutlet var serarchBar: UISearchBar!
+    @IBOutlet var searchBar: UISearchBar!
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -44,6 +45,7 @@ extension FriendListViewController {
     }
     
     private func setupDelegates() {
+        searchBar.delegate = self
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -56,12 +58,15 @@ extension FriendListViewController {
 extension FriendListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        chatRoomList.count
+        filteredChatRoomList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let chatRoom = chatRoomList[indexPath.item]
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendListCell", for: indexPath) as! FriendListCell
+        let chatRoom = filteredChatRoomList[indexPath.item]
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "FriendListCell",
+            for: indexPath
+        ) as! FriendListCell
         cell.configureData(chatRoom: chatRoom)
         return cell
     }
@@ -72,5 +77,33 @@ extension FriendListViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 
 extension FriendListViewController: UICollectionViewDelegate {
+    
+}
+
+
+// MARK: - UISearchBarDelegate
+
+extension FriendListViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        let trimmedText = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+        if trimmedText.isEmpty {
+            filteredChatRoomList = allChatRoomList
+            collectionView.reloadData()
+        } else {
+            filteredChatRoomList = allChatRoomList.filter {
+                $0.chatroomName.lowercased().contains(trimmedText.lowercased())
+            }
+            collectionView.reloadData()
+        }
+    }
     
 }

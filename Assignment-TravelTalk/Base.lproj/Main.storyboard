@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" title="TRAVEL TALK" id="xIq-sV-LxX"/>
                     <connections>
                         <outlet property="collectionView" destination="ov3-Fr-ry3" id="hcw-yv-LcE"/>
-                        <outlet property="serarchBar" destination="SOA-6T-Zac" id="opb-qO-nD5"/>
+                        <outlet property="searchBar" destination="SOA-6T-Zac" id="opb-qO-nD5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

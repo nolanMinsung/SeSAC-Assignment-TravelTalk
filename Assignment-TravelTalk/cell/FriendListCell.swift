@@ -35,7 +35,7 @@ class FriendListCell: UICollectionViewCell {
     func configureData(chatRoom: ChatRoom) {
         imageView.image = try? chatRoom.getImage()
         chatRoomNameLabel.text = chatRoom.chatroomName
-        latestChatLabel.text = chatRoom.latestChat!.message + chatRoom.latestChat!.message
+        latestChatLabel.text = chatRoom.latestChat!.message
         latestChatDateLabel.text = chatRoom.latestChat!.dateStringForUI
     }
     
