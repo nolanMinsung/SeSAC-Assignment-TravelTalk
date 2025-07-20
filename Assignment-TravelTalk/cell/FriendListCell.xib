@@ -2,67 +2,86 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FriendListCell" id="gTV-IL-0wX" customClass="FriendListCell" customModule="Assignment_TravelTalk" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="371" height="139"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="238"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="371" height="139"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="238"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bCy-re-YyL">
-                        <rect key="frame" x="102" y="37.666666666666657" width="194" height="64"/>
+                        <rect key="frame" x="92" y="56.666666666666657" width="143" height="125"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름이 들어갈 자리입니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR6-4s-Yiu">
-                                <rect key="frame" x="0.0" y="0.0" width="194" height="20.333333333333332"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름이 들어갈 자리입니다. 이름이 길어지면 어떻게 될까요?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR6-4s-Yiu">
+                                <rect key="frame" x="0.0" y="0.0" width="143" height="81.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가장 최근 채팅 내역이 들어갈 자리입니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9i-KB-RHR">
-                                <rect key="frame" x="0.0" y="30.333333333333339" width="194" height="33.666666666666657"/>
+                                <rect key="frame" x="0.0" y="91.333333333333343" width="143" height="33.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="24.01.12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8U1-Di-Vc0">
-                        <rect key="frame" x="306" y="30" width="53" height="17"/>
+                        <rect key="frame" x="245" y="88.666666666666671" width="53" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mrK-PN-8ru">
-                        <rect key="frame" x="12" y="29.666666666666671" width="80" height="80"/>
+                        <rect key="frame" x="22" y="89" width="60" height="60"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="80" id="873-AH-PSp"/>
+                            <constraint firstAttribute="width" constant="60" id="873-AH-PSp"/>
                             <constraint firstAttribute="width" secondItem="mrK-PN-8ru" secondAttribute="height" id="WBX-sf-kyu"/>
                         </constraints>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="bCy-re-YyL" firstAttribute="centerY" secondItem="mrK-PN-8ru" secondAttribute="centerY" id="BPD-zC-IL9"/>
+                <constraint firstItem="8U1-Di-Vc0" firstAttribute="centerY" secondItem="ZR6-4s-Yiu" secondAttribute="centerY" id="I0A-mt-DW3"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bCy-re-YyL" secondAttribute="bottom" constant="14" id="IfV-T5-rKa"/>
                 <constraint firstItem="mrK-PN-8ru" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="It7-BO-rRe"/>
-                <constraint firstItem="8U1-Di-Vc0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="TsL-4z-83C"/>
-                <constraint firstAttribute="trailing" secondItem="8U1-Di-Vc0" secondAttribute="trailing" constant="12" id="VWX-UF-v5Y"/>
-                <constraint firstItem="mrK-PN-8ru" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="ZUJ-sy-UVE"/>
+                <constraint firstAttribute="trailing" secondItem="8U1-Di-Vc0" secondAttribute="trailing" constant="22" id="VWX-UF-v5Y"/>
+                <constraint firstItem="mrK-PN-8ru" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="22" id="ZUJ-sy-UVE"/>
                 <constraint firstItem="bCy-re-YyL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="qgL-ub-sPo"/>
                 <constraint firstItem="8U1-Di-Vc0" firstAttribute="leading" secondItem="bCy-re-YyL" secondAttribute="trailing" constant="10" id="uKy-gh-VVj"/>
                 <constraint firstItem="bCy-re-YyL" firstAttribute="leading" secondItem="mrK-PN-8ru" secondAttribute="trailing" constant="10" id="wkX-KP-E8e"/>
             </constraints>
-            <size key="customSize" width="371" height="139"/>
-            <point key="canvasLocation" x="150.38167938931298" y="72.183098591549296"/>
+            <size key="customSize" width="320" height="238"/>
+            <connections>
+                <outlet property="chatRoomNameLabel" destination="ZR6-4s-Yiu" id="g9x-FK-oay"/>
+                <outlet property="imageView" destination="mrK-PN-8ru" id="K42-u7-sX4"/>
+                <outlet property="latestChatDateLabel" destination="8U1-Di-Vc0" id="Dbz-LQ-hRw"/>
+                <outlet property="latestChatLabel" destination="z9i-KB-RHR" id="6LO-kx-VEY"/>
+            </connections>
+            <point key="canvasLocation" x="111.45038167938931" y="104.92957746478874"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
