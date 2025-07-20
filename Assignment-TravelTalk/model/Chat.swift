@@ -15,11 +15,9 @@ enum ChatError: Error {
 struct Chat {
     let user: User
     let date: String
-    var dateStringForUI: String {
-        (try? getDateStringForUI()) ?? ""
-    }
+    var dateStringForChatListView: String { (try? getDateStringForChatListView()) ?? "" }
+    var dateStringForChatLog: String { (try? getDateStringForChatLog()) ?? "" }
     let message: String
-    
     
     private func getDate() throws -> Date {
         let formatter = DateFormatter()
@@ -31,10 +29,18 @@ struct Chat {
         }
     }
     
-    func getDateStringForUI() throws -> String {
+    private func getDateStringForChatListView() throws -> String {
         guard let date = try? getDate() else { throw ChatError.invalidDateFormat }
         let formatter = DateFormatter()
         formatter.dateFormat = "yy.MM.dd"
+        return formatter.string(from: date)
+    }
+    
+    private func getDateStringForChatLog() throws -> String {
+        guard let date = try? getDate() else { throw ChatError.invalidDateFormat }
+        let formatter = DateFormatter()
+        // 예시: 06:40 오후
+        formatter.dateFormat = "hh:mm a"
         return formatter.string(from: date)
     }
     

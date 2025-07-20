@@ -22,15 +22,16 @@ class ChatRoomListViewController: UIViewController {
         
         setupCollectionView()
         setupDelegates()
+        navigationController?.navigationBar.tintColor = .label
     }
     
 }
 
 // Initial Settings
 
-extension ChatRoomListViewController {
+private extension ChatRoomListViewController {
     
-    private func setupCollectionView() {
+    func setupCollectionView() {
         // cell registrering
         let nib = UINib(nibName: "FriendListCell", bundle: .main)
         collectionView.register(nib, forCellWithReuseIdentifier: "FriendListCell")
@@ -44,7 +45,7 @@ extension ChatRoomListViewController {
         collectionView.collectionViewLayout = flowLayout
     }
     
-    private func setupDelegates() {
+    func setupDelegates() {
         searchBar.delegate = self
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -77,6 +78,15 @@ extension ChatRoomListViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 
 extension ChatRoomListViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let chatRoomData = filteredChatRoomList[indexPath.item]
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ChatLogViewController") as! ChatLogViewController
+        vc.title = chatRoomData.chatroomName
+        vc.chatLog = chatRoomData.chatList
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
 

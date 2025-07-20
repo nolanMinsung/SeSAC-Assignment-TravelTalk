@@ -24,7 +24,7 @@ class FriendListCell: UICollectionViewCell {
         if UIDevice.current.userInterfaceIdiom == .phone {
             cellWidth = UIScreen.main.bounds.width
         } else {
-            cellWidth = 320
+            cellWidth = 360
         }
         contentView.widthAnchor.constraint(equalToConstant: cellWidth).isActive = true
     }
@@ -33,7 +33,7 @@ class FriendListCell: UICollectionViewCell {
         imageView.image = try? chatRoom.getImage()
         chatRoomNameLabel.text = chatRoom.chatroomName
         latestChatLabel.text = chatRoom.latestChat!.message
-        latestChatDateLabel.text = chatRoom.latestChat!.dateStringForUI
+        latestChatDateLabel.text = chatRoom.latestChat!.dateStringForChatListView
     }
     
 }
