@@ -83,7 +83,7 @@ extension ChatRoomListViewController: UICollectionViewDelegate {
         let chatRoomData = filteredChatRoomList[indexPath.item]
         let vc = storyboard?.instantiateViewController(withIdentifier: "ChatLogViewController") as! ChatLogViewController
         vc.title = chatRoomData.chatroomName
-        vc.chatLog = chatRoomData.chatList
+        vc.chatRoomId = chatRoomData.chatroomId
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
