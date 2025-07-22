@@ -10,4 +10,7 @@ import Foundation
 
 enum ChatError: Error {
     case invalidDateFormat
+    case userProfileImageNotFound
+    case chatRoomImageNotFound
+    case duplicateChatRoomID
 }
