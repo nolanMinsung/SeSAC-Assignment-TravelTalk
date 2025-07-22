@@ -7,9 +7,7 @@
 
 import Foundation
 
-enum ChatError: Error {
-    case invalidDateFormat
-}
+
 
 //채팅 화면에서 사용할 데이터 구조체
 struct Chat {
