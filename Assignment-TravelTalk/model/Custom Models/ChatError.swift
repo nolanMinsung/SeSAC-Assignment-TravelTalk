@@ -9,7 +9,7 @@ import Foundation
 
 
 enum ChatError: Error {
-    case invalidDateFormat
+    case invalidChatDateFormat
     case userProfileImageNotFound
     case chatRoomImageNotFound
     case duplicateChatRoomID

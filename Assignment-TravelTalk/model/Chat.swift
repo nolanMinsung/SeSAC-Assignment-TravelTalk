@@ -23,19 +23,19 @@ struct Chat {
         if let date = formatter.date(from: date) {
             return date
         } else {
-            throw ChatError.invalidDateFormat
+            throw ChatError.invalidChatDateFormat
         }
     }
     
     private func getDateStringForChatListView() throws -> String {
-        guard let date = try? getDate() else { throw ChatError.invalidDateFormat }
+        guard let date = try? getDate() else { throw ChatError.invalidChatDateFormat }
         let formatter = DateFormatter()
         formatter.dateFormat = "yy.MM.dd"
         return formatter.string(from: date)
     }
     
     private func getDateStringForChatLog() throws -> String {
-        guard let date = try? getDate() else { throw ChatError.invalidDateFormat }
+        guard let date = try? getDate() else { throw ChatError.invalidChatDateFormat }
         let formatter = DateFormatter()
         // 예시: 06:40 오후
         formatter.dateFormat = "hh:mm a"

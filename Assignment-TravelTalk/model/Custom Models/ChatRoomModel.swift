@@ -20,11 +20,19 @@ struct ChatRoomModel {
             throw ChatError.duplicateChatRoomID
         }
         
-        return ChatRoomModel(chatRoomId: chatRoom.chatroomId, roomImage: roomImage, roomName: chatRoom.chatroomName)
+        do {
+            let chatList = try chatRoom.chatList.map({ try ChatModel.from(dto: $0) })
+            return ChatRoomModel(
+                chatRoomId: chatRoom.chatroomId,
+                roomImage: roomImage,
+                roomName: chatRoom.chatroomName,
+                chatList: chatList
+            )
+        }
     }
     
     let chatRoomId: Int
     let roomImage: UIImage
     let roomName: String
-    var chatList: [Chat] = []
+    var chatList: [ChatModel]
 }

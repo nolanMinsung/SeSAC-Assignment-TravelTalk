@@ -17,7 +17,7 @@ struct ChatModel {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
         guard let date = formatter.date(from: chat.date) else {
-            throw ChatError.invalidDateFormat
+            throw ChatError.invalidChatDateFormat
         }
         
         let chatModel = ChatModel(
