@@ -29,11 +29,11 @@ class FriendListCell: UICollectionViewCell {
         contentView.widthAnchor.constraint(equalToConstant: cellWidth).isActive = true
     }
     
-    func configureData(chatRoom: ChatRoom) {
-        imageView.image = try? chatRoom.getImage()
-        chatRoomNameLabel.text = chatRoom.chatroomName
+    func configureData(chatRoom: ChatRoomModel) {
+        imageView.image = chatRoom.roomImage
+        chatRoomNameLabel.text = chatRoom.roomName
         latestChatLabel.text = chatRoom.latestChat!.message
-        latestChatDateLabel.text = chatRoom.latestChat!.dateStringForChatListView
+        latestChatDateLabel.text = chatRoom.latestChat!.chatListDateString
     }
     
 }

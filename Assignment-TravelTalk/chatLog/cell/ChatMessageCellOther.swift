@@ -35,11 +35,11 @@ class ChatMessageCellOther: UITableViewCell, ChatMessageCell {
         
     }
     
-    func configureData(with chat: Chat) {
-        profileImageView.image = chat.user.profileImage
+    func configureData(with chat: ChatModel) {
+        profileImageView.image = chat.user.image
         nameLabel.text = chat.user.name
         messageLabel.text = chat.message
-        timeLabel.text = chat.dateStringForChatLog
+        timeLabel.text = chat.chatLogDateString
     }
     
 }

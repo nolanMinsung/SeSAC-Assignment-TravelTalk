@@ -8,7 +8,7 @@
 import UIKit
 
 
-struct UserModel {
+struct UserModel: Equatable {
     
     static func from(dto user: User) throws -> UserModel {
         guard let image = UIImage(named: user.image) else {

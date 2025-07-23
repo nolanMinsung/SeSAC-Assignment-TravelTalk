@@ -9,8 +9,10 @@ import UIKit
 
 class ChatRoomListViewController: UIViewController {
     
-    private(set) var allChatRoomList = ChatList.list
-    private(set) lazy var filteredChatRoomList: [ChatRoom] = allChatRoomList
+//    private(set) var allChatRoomList = ChatList.list
+//    private(set) lazy var filteredChatRoomList: [ChatRoom] = allChatRoomList
+    private(set) var allChatRoomList = ChatData.list
+    private(set) lazy var filteredChatRoomList: [ChatRoomModel]? = allChatRoomList
     
     @IBOutlet var searchBar: UISearchBar!
     
@@ -59,16 +61,19 @@ private extension ChatRoomListViewController {
 extension ChatRoomListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        filteredChatRoomList.count
+        filteredChatRoomList?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let chatRoom = filteredChatRoomList[indexPath.item]
+        guard let filteredChatRoomList else {
+            fatalError("채팅방 리스트 생성에 오류가 있습니다.")
+        }
+        let chatRoomModel = filteredChatRoomList[indexPath.item]
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: "FriendListCell",
             for: indexPath
         ) as! FriendListCell
-        cell.configureData(chatRoom: chatRoom)
+        cell.configureData(chatRoom: chatRoomModel)
         return cell
     }
     
@@ -80,10 +85,13 @@ extension ChatRoomListViewController: UICollectionViewDataSource {
 extension ChatRoomListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let filteredChatRoomList else {
+            fatalError("채팅방 리스트 생성에 오류가 있습니다.")
+        }
         let chatRoomData = filteredChatRoomList[indexPath.item]
         let vc = storyboard?.instantiateViewController(withIdentifier: "ChatLogViewController") as! ChatLogViewController
-        vc.title = chatRoomData.chatroomName
-        vc.chatRoomId = chatRoomData.chatroomId
+        vc.title = chatRoomData.roomName
+        vc.chatRoomId = chatRoomData.chatRoomId
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
@@ -109,8 +117,11 @@ extension ChatRoomListViewController: UISearchBarDelegate {
             filteredChatRoomList = allChatRoomList
             collectionView.reloadData()
         } else {
-            filteredChatRoomList = allChatRoomList.filter {
-                $0.chatroomName.lowercased().contains(trimmedText.lowercased())
+            guard filteredChatRoomList != nil else {
+                fatalError("채팅방 리스트 생성에 오류가 있습니다.")
+            }
+            filteredChatRoomList = allChatRoomList?.filter {
+                $0.roomName.lowercased().contains(trimmedText.lowercased())
             }
             collectionView.reloadData()
         }

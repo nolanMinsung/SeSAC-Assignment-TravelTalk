@@ -51,12 +51,20 @@ class ChatLogViewController: UIViewController {
         guard !trimmedText.isEmpty else { return }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
-        let newChat = Chat(
-            user: ChatList.me,
-            date: dateFormatter.string(from: .now),
+        let newChatModel = ChatModel(
+            user: UserData.me,
+            date: Date.now,
             message: trimmedText
         )
-        ChatList.list[chatRoomId-1].chatList.append(newChat)
+        
+        // 레거시 코드
+//        let newChat = Chat(
+//            user: ChatList.me,
+//            date: dateFormatter.string(from: .now),
+//            message: trimmedText
+//        )
+//        ChatList.list[chatRoomId-1].chatList.append(newChat)
+        ChatData.list?[chatRoomId-1].chatList.append(newChatModel)
         tableView.reloadData()
         scrollToLastRow()
     }
@@ -133,21 +141,26 @@ extension ChatLogViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let chatRoomId else { fatalError() }
-        return ChatList.list[chatRoomId-1].chatList.count
+//        return ChatList.list[chatRoomId-1].chatList.count
+        guard ChatData.list != nil else { fatalError("채팅 데이터 생성에 오류가 있습니다.") }
+        return ChatData.list![chatRoomId-1].chatList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let chatRoomId else { fatalError() }
-        let chatItem = ChatList.list[chatRoomId-1].chatList[indexPath.row]
+//        let chatItem = ChatList.list[chatRoomId-1].chatList[indexPath.row]
+        guard ChatData.list != nil else { fatalError("채팅 데이터 생성에 오류가 있습니다.") }
+        let chatModelItem = ChatData.list![chatRoomId-1].chatList[indexPath.row]
         
         let cell: any ChatMessageCell
-        if chatItem.user.name == ChatList.me.name {
+        if chatModelItem.user == UserData.me {
+//        if chatItem.user.name == ChatList.me.name {
             cell = tableView.dequeueReusableCell(withIdentifier: "ChatMessageCellUser") as! ChatMessageCellUser
         } else {
             cell = tableView.dequeueReusableCell(withIdentifier: "ChatMessageCellOther") as! ChatMessageCellOther
         }
         
-        cell.configureData(with: chatItem)
+        cell.configureData(with: chatModelItem)
         return cell
     }
     

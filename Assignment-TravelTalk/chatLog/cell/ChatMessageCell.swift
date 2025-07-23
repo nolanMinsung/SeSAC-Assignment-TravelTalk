@@ -10,6 +10,7 @@ import UIKit
 
 protocol ChatMessageCell: UITableViewCell {
     
-    func configureData(with chat: Chat)
+//    func configureData(with chat: Chat)
+    func configureData(with chat: ChatModel)
     
 }

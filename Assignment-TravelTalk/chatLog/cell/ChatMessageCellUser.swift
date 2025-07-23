@@ -28,9 +28,9 @@ class ChatMessageCellUser: UITableViewCell, ChatMessageCell {
         
     }
     
-    func configureData(with chat: Chat) {
+    func configureData(with chat: ChatModel) {
         messageLabel.text = chat.message
-        timeLabel.text = chat.dateStringForChatLog
+        timeLabel.text = chat.chatLogDateString
     }
     
 }

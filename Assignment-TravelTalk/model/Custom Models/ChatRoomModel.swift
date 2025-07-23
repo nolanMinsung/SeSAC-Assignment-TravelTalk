@@ -35,4 +35,9 @@ struct ChatRoomModel {
     let roomImage: UIImage
     let roomName: String
     var chatList: [ChatModel]
+    
+    /// 가장 마지막(최근) 채팅 정보. 채팅 내역이 없을 경우 `nil` 반환
+    var latestChat: ChatModel? {
+        chatList.last
+    }
 }
